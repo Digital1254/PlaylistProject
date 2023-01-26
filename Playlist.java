@@ -95,7 +95,7 @@ public class Playlist
       }
       public void removeunliked()
       {
-          for(int i = playlist.size(); i >= 0; i--){
+          for(int i = playlist.size() - 1; i >= 0; i--){
               Song current = playlist.get(i);
               if(!(current.isLiked())){
                   playlist.remove(i);
