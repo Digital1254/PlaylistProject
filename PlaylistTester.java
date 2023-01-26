@@ -10,6 +10,7 @@ public class PlaylistTester {
     public static void main(String[] args) {
         System.out.println("Initializing a Playlist...\n");
         //Make your playlist here
+        Playlist x = new Playlist();
 
         System.out.println("Adding songs to the Playlist...\n");
         /**
@@ -17,6 +18,10 @@ public class PlaylistTester {
          * is something like...
          * p.addSong(new Song(..., ..., ...))
          */
+        x.add(new Song("Daft Punk", "End of Line", 156));
+        x.add(new Song("Arctic Monkeys", "Teddy Picker", 160));
+        x.add(new Song("$20", "Boygenius", 320));
+        x.add(new Song("alt-j", "Philadelphia", 218));
 
 
 
