@@ -18,12 +18,12 @@ public class Song {
      * Constructor-- what information needs to be given to make a Song?
      * How will you handle 'liked' songs? It makes sense for a Song not be 'liked' by default
      */
-    public Song(String artist, String name, int length, boolean liked)
+    public Song(String myartist, String myname, int mylength, boolean myliked)
     {
-        this.artist = artist;
-        this.name = name;
-        this.length = length;
-        this.liked = liked;
+        artist = myartist;
+        name = myname;
+        length = mylength;
+        liked = false;
     }
      /**
       * Methods-- what will you want each Song to do?
@@ -47,11 +47,12 @@ public class Song {
     }
     public boolean isLiked()
     {
-        return true;
-    }
-    public boolean isNotLiked()
-    {
-        return false;
+        if(liked){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
     public int getDurationInSeconds()
     {

@@ -65,7 +65,35 @@ public class Playlist {
           String a = x.substring(0, z-2);
           return a;
       }
-      public String examineliked{
-          
+      public String examineliked(){
+          String x = "";
+          for(int i = 0; i < playlist.size(); i++){
+              Song current = playlist.get(i);
+              if(current.isLiked()){
+                  String y = current.getName();
+                  x += y + ", ";
+
+              }
+          }
+          int z = x.length();
+          String a = x.substring(0, z-2);
+          return a;
       }
+      public int totalduration(){
+          int sum = 0;
+          for(int i = 0; i < playlist.size(); i++){
+              Song current = playlist.get(i);
+              sum += current.getLength();
+          }
+          return sum;
+          //this returns the total time in seconds
+          //there is no automatic conversion between minutes and seconds
+      }
+      public void removeunliked(){
+          for(int i = playlist.size(); i >= 0; i--){
+              Song current = playlist.get(i);
+              if(current.
+          }
+      }
+      
 }
