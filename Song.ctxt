@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Song
 comment0.text=\n\ Write\ a\ description\ of\ class\ Song\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=artist\ name\ length\ liked
+comment1.params=myartist\ myname\ mylength\ myliked
 comment1.target=Song(java.lang.String,\ java.lang.String,\ int,\ boolean)
 comment1.text=\n\ Constructor--\ what\ information\ needs\ to\ be\ given\ to\ make\ a\ Song?\n\ How\ will\ you\ handle\ 'liked'\ songs?\ It\ makes\ sense\ for\ a\ Song\ not\ be\ 'liked'\ by\ default\n
 comment2.params=
@@ -14,5 +14,7 @@ comment4.target=int\ getLength()
 comment5.params=
 comment5.target=boolean\ isLiked()
 comment6.params=
-comment6.target=boolean\ isNotLiked()
-numComments=7
+comment6.target=int\ getDurationInSeconds()
+comment7.params=
+comment7.target=void\ like()
+numComments=8

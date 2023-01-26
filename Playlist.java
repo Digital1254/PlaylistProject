@@ -11,7 +11,8 @@ import java.util.ArrayList;
  * The Playlist class, which will keep track of a playlist of Song objects
  * Refer to the project description to make sure you have access to all available methods
  */
-public class Playlist {
+public class Playlist 
+{
     /**
      * Fields-- This will likely just need to be the ArrayList of Songs. Reference our previous problems
      * (CarDealership, Zoo) for structure on how this will look
@@ -54,7 +55,8 @@ public class Playlist {
       {
           playlist.remove(index);
       }
-      public String examine(){
+      public String examine()
+      {
           String x = "";
           for(int i =0; i < playlist.size(); i++){
               Song current = playlist.get(i);
@@ -65,7 +67,8 @@ public class Playlist {
           String a = x.substring(0, z-2);
           return a;
       }
-      public String examineliked(){
+      public String examineliked()
+      {
           String x = "";
           for(int i = 0; i < playlist.size(); i++){
               Song current = playlist.get(i);
@@ -79,7 +82,8 @@ public class Playlist {
           String a = x.substring(0, z-2);
           return a;
       }
-      public int totalduration(){
+      public int totalduration()
+      {
           int sum = 0;
           for(int i = 0; i < playlist.size(); i++){
               Song current = playlist.get(i);
@@ -89,10 +93,13 @@ public class Playlist {
           //this returns the total time in seconds
           //there is no automatic conversion between minutes and seconds
       }
-      public void removeunliked(){
+      public void removeunliked()
+      {
           for(int i = playlist.size(); i >= 0; i--){
               Song current = playlist.get(i);
-              if(current.
+              if(!(current.isLiked())){
+                  playlist.remove(i);
+              }
           }
       }
       
