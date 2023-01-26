@@ -17,7 +17,7 @@ public class Playlist {
      * (CarDealership, Zoo) for structure on how this will look
      */
 
-    private ArrayList<song> playlist = new ArrayList<>();
+    private ArrayList<Song> playlist;
 
 
      /**
@@ -27,6 +27,7 @@ public class Playlist {
 
     public Playlist()
     {
+        playlist = new ArrayList<Song>();
     }
       
 
@@ -40,4 +41,31 @@ public class Playlist {
        * Determining the total duration of all songs
        * Removing all unliked songs from the playlist (careful with this one!)
        */
+      public void add(Song x)
+      {
+          playlist.add(x);
+      }
+      public void like2(int index)
+      {
+          Song x = playlist.get(index);
+          x.like();
+      }
+      public void remove(int index)
+      {
+          playlist.remove(index);
+      }
+      public String examine(){
+          String x = "";
+          for(int i =0; i < playlist.size(); i++){
+              Song current = playlist.get(i);
+              String y = current.getName();
+              x += y + ", ";
+          }
+          int z = x.length();
+          String a = x.substring(0, z-2);
+          return a;
+      }
+      public String examineliked{
+          
+      }
 }
