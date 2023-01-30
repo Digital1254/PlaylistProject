@@ -1,0 +1,25 @@
+
+/*
+
+COMMENTS FROM THE INSTRUCTOR:
+
+Nice work on this, Rowan, and that *is* a decent collection of music!
+
+x.add(new Song("Daft Punk", "End of Line", 156));
+x.add(new Song("Arctic Monkeys", "Teddy Picker", 160));
+x.add(new Song("$20", "Boygenius", 320));
+x.add(new Song("alt-J", "Philadelphia", 218));
+x.add(new Song("Magdalena Bay", "You Lose!", 204));
+
+You inspired me to dust off the old MP3s from the Tron Legacy soundtrack,
+and now we'll be listening to those in class next week! :)
+
+I added a .gitignore file so that tracking is turned off for those
+annoying .class and .ctxt files.
+
+Accept this pull request and you'll be all done. Congratulations!
+
+SCORE: 20
+
+*/
+
